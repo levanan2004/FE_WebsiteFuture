@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: var(--font-montserrat);
+}
+.btn-header{
+  @apply sm:hidden z-10 py-[8px] px-1 pr-10 w-full h-[85px] bg-black  text-[16px] 
+  overflow-visible fixed top-0 left-0 transition duration-500 border-b-[1px] border-gray-300   xl:flex
+}
+.btn-header-ul{
+  @apply sm:hidden xl:flex space-x-2 text-[#ffe77d] text-[15px] font-bold ml-auto items-center 
+  [&>li]:py-2 [&>li]:px-4 [&>li]:hover:shadow-lg [&>li]:shadow-[#9f22d6]/50 
+  [&>li]:hover:border-b-[2px] [&>li]:hover:border-l-[2px] [&>li]:hover:border-[#9f22d6]  
+  [&>li]:transition [&>li]:duration-500 [&>li]:cursor-pointer [&>li]:rounded-2xl
+}
